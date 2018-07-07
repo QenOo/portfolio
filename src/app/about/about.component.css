@@ -1,0 +1,40 @@
+/*Start about me*/
+.about-me {padding: 20px}
+
+.about-me h4 {
+    position: relative;
+    width: 167px;
+    text-transform: uppercase
+}
+
+.about-me h4::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    border-top: 3px solid #FFF;
+    border-left: 3px solid #FFF;
+}
+
+.about-me h4::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+    border-bottom: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+}
+
+.about-me ul li {
+    padding: 15px;
+    border-bottom: 2px dotted #FFF
+}
+
+.about-me p {padding: 15px}
+/*End about me*/

@@ -1,0 +1,45 @@
+.Home-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+}
+
+.Home-header img {
+    width: 100%;
+    background-size: cover;
+}
+
+.Home-header h1 {
+    color: #FFF;
+}
+
+.Home-header h1::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    left: -30px;
+    border-top: 3px solid #FFF;
+    border-left: 3px solid #FFF;
+}
+
+.Home-header h1::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: -5px;
+    right: -30px;
+    border-bottom: 3px solid #FFF;
+    border-right: 3px solid #FFF;
+}
+
+.Home-header span {
+    color: #DDD;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
