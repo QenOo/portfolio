@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CV</title>
+  <base href="https://QenOo.github.io/portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- BootStrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+  <!-- Line Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
+
+  <!-- lightBox -->
+  <link rel="stylesheet" href="assets/css/lightbox.min.css">
+<link rel="stylesheet" href="styles.4c1a27bb129b9094d366.css"></head>
+<body>
+  <app-root></app-root>
+
+
+  <!-- BootStrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
+
+
+  <!--Menu Toggle Class-->
+  <script>
+
+    $(function () {
+      
+      $('.toggle').on('click', function () {
+
+        $(this).toggleClass('active');
+        $('.overlay').toggleClass('active');
+        $('.menu').toggleClass('active');
+        
+      });
+
+      $('.up-menu .menu ul li a').on('click', function () {
+        $('.up-menu .toggle').removeClass('active');
+        $('.up-menu .overlay').removeClass('active');
+        $('.up-menu .menu').removeClass('active');
+      });
+
+    });
+
+  </script>
+  <script>
+    
+    $(function () {
+      
+      'use strict';
+
+      var HeightHeader = $(window).height();
+
+      $('.header, .content').height(HeightHeader);
+
+    });
+
+  </script>
+  <script>
+     var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+      </script>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.6b9c75cf3de08866d852.js"></script></body>
+</html>
